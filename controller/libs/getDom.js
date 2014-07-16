@@ -1,4 +1,12 @@
 function getDom() {
+  function returnIntVal(val) {
+    if(typeof val == 'string') {
+      return parseInt(val.replace(/[^-\d\.]/g, ''));
+    } else {
+      return val;
+    }
+  }
+
   $(document).mouseup(function(event) {
     var target = jQuery(event.target);
 
