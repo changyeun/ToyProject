@@ -1,3 +1,4 @@
 (function() {
-  putDom();
+  //putDom();
+  getDom();
 })();
