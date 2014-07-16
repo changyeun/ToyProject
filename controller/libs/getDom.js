@@ -1,3 +1,3 @@
-function putDom() {
+function getDom() {
   return;
 }
