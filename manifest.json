@@ -9,6 +9,7 @@
       "https://*/*"
     ],
     "js": [
+      "static/jquery.min.js",
       "controller/libs/putDom.js",
       "controller/controller.js"
     ]
