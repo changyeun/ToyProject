@@ -16,6 +16,25 @@ function getDom() {
       width: returnIntVal(target.innerWidth()) - returnIntVal(target.css('padding-left')) - returnIntVal(target.css('padding-right')),
       height: returnIntVal(target.innerHeight()) - returnIntVal(target.css('padding-top')) - returnIntVal(target.css('padding-bottom')),
     }
+
+    var elem = $("<div></div>");
+
+    elem.attr({
+      'id': 'elem_id',
+    });
+
+    elem.css({
+      'position': 'absolute',
+      'top': offset.top,
+      'left': offset.left,
+      'width': offset.width,
+      'height': offset.height,
+      'z-index': '10000',
+      'border': '1px solid #000000',
+      'background-color': 'rgba(255, 255, 255, 0)',
+    });
+
+    elem.appendTo('body');
   });
 
   return;
