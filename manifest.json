@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "ToyProject",
+  "description": "ToyProject",
+  "version": "0.0.1",
+  "content_scripts": [{
+    "matches": [
+      "http://*/*",
+      "https://*/*"
+    ],
+    "js": [
+      "static/jquery.min.js",
+      "controller/libs/putDom.js",
+      "controller/controller.js"
+    ]
+  }]
+}
