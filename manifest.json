@@ -11,6 +11,7 @@
     "js": [
       "static/jquery.min.js",
       "controller/test.js",
+      "controller/test2.js",
       "controller/libs/putDom.js",
       "controller/libs/getDom.js",
       "controller/controller.js"
